@@ -38,12 +38,12 @@ const HeroSection = ({ hero, brand, navLinks }) => (
     <div className="absolute inset-0 bg-hero-crops bg-cover bg-center" aria-hidden="true" />
     <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
     <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-8 sm:px-8">
-      <nav className="flex items-center justify-between rounded-full bg-white/85 px-4 py-3 shadow-lg backdrop-blur">
+      <nav className="flex flex-col gap-3 rounded-full bg-white/85 px-4 py-3 shadow-lg backdrop-blur sm:flex-row sm:items-center sm:justify-between">
         <Link to="/" className="flex items-center gap-3">
           <BrandLogo className="h-10" />
           <span className="sr-only">{brand}</span>
         </Link>
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex w-full flex-wrap items-center justify-center gap-2 sm:w-auto sm:justify-end sm:gap-3">
           {navLinks.map((link) => (
             <NavLink key={link.label} href={link.href}>
               {link.label}

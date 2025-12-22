@@ -5,7 +5,7 @@ const ProductSection = ({ products }) => (
       <p className="text-brand-highlight tracking-[0.3em] uppercase text-xs">Línea profesional</p>
       <h2 className="font-display text-3xl text-brand-primary">Soluciones nutricionales</h2>
     </header>
-    <div className="mt-10 grid gap-6 rounded-3xl bg-white/90 p-6 shadow-xl md:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-10 grid gap-6 rounded-3xl bg-white/90 p-4 shadow-xl sm:p-6 md:grid-cols-2 lg:grid-cols-3">
       {products.map((product) => {
         const message = encodeURIComponent(`Hola, me interesa cotizar ${product.name}`);
         const whatsappUrl = `https://wa.me/523314025519?text=${message}`;
@@ -14,7 +14,7 @@ const ProductSection = ({ products }) => (
             key={product.id}
             className="flex flex-col overflow-hidden rounded-2xl border border-brand-primary/15 bg-white shadow-lg shadow-brand-primary/20"
           >
-            <div className="flex h-72 items-center justify-center bg-brand-accent/40 p-6">
+            <div className="flex h-60 items-center justify-center bg-brand-accent/40 p-6 sm:h-72">
               <img
                 src={product.image}
                 alt={product.name}
