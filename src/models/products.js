@@ -24,7 +24,7 @@ import yodo from '../assets/YODO.png'
 import zincKhorn from '../assets/ZINC KHORN.png'
 import zinc from '../assets/ZINC.png'
 import maquilasMarca from '../assets/maquilas con marca.png'
-import maquilasFormulaciones from '../assets/maquilas especiales en fórmulaciones .png'
+import maquilasFormulaciones from '../assets/maquilas-especiales-formulaciones.png'
 
 // Modelo: catálogo completo usando las imágenes reales de assets (se excluye el archivo base).
 export const productList = [
