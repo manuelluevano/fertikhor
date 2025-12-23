@@ -8,20 +8,19 @@ export const siteInfo = {
     { label: 'Quiénes somos', href: '/quienes-somos' }
   ],
   hero: {
-    title: 'Fertilizantes foliares y de fertirriego que suben tu rendimiento',
-    subtitle:
-      'Portafolio completo con fórmulas concentradas, correctores y coadyuvantes listos para campo abierto, invernadero y berries. Respuestas visibles en 48 h y soporte agronómico directo.',
-    primaryAction: { label: 'Cotizar ahora', href: '/contacto' },
+    title: 'Somos FertiKhor, fábrica química industrial de fertilizantes de alta concentración y asimilación.',
+    subtitle: '',
+    primaryAction: { label: '', href: '' },
     secondaryAction: { label: '', href: '' }
   },
   values: [
     {
       title: 'Fórmulas concentradas',
-      description: 'Nutrientes y coadyuvantes en alta concentración para menos pasadas y mejores mezclas.'
+      description: 'Nutrientes y formulaciones en alta concentración y asimilación.'
     },
     {
       title: 'Compatibilidad probada',
-      description: 'Ensayos constantes en fertirriego y aplicaciones foliares para garantizar seguridad en tanque.'
+      description: 'Ensayos constantes en fertirriego y aplicaciones foliares para garantizar seguridad en resultados.'
     },
     {
       title: 'Soporte agronómico',
@@ -30,30 +29,29 @@ export const siteInfo = {
   ],
   solutions: {
     title: 'Soluciones para cada etapa',
-    description: 'Programas foliares y de fertirriego para raíces, crecimiento, floración, llenado y calidad final.',
+    description: 'Programas arranqué, desarrollo, floración, llenado y calidad final.',
     items: [
       {
-        name: 'Arranque y raíces',
-        details: 'Enraizadores, fósforo disponible y humus líquidos para plántula vigorosa y suelo suelto.',
-        tags: ['Trasplante', 'Siembra directa']
+        name: 'Arranque y desarrollo',
+        details: 'Producimos enraizadores sólidos y líquidos, arrancadores y formulaciones para desarrollo vegetativo.',
+        tags: []
       },
       {
         name: 'Floración y cuaje',
         details: 'Calcio, boro, molibdeno y fosfitos sistémicos para amarre uniforme y defensa natural.',
-        tags: ['Floración', 'Cuajado']
+        tags: []
       },
       {
         name: 'Llenado y calidad',
         details: 'Potasio, silicio y micronutrientes que elevan grados Brix, firmeza y apariencia comercial.',
-        tags: ['Llenado', 'Calidad']
+        tags: []
       }
     ]
   },
   innovation: {
-    title: 'Foliares tapatíos probados en campo',
-    description:
-      'Ferti Khor es una línea de fertilizantes foliares líquidos de alta concentración, creada en Guadalajara y aplicada sobre hoja para corregir deficiencias rápido. Probamos cada lote para que disuelva fácil, mezcle seguro y mejore consistencia, calidad y tamaño de frutos y granos.',
-    highlights: ['Alta concentración N-P-K (ej. 15-20-10)', 'Absorción foliar rápida', 'Origen tapatío con pruebas en campo']
+    title: 'FERTILIZANTES FERTI-KHOR',
+    description: '',
+    highlights: []
   },
   support: {
     title: 'Soporte simple y directo',
@@ -88,19 +86,20 @@ export const siteInfo = {
     ]
   },
   cta: {
-    title: 'Arma tu programa foliar y de fertirriego hoy',
-    description: 'Cuéntanos cultivo, etapa y sistema de riego para enviarte dosis, frecuencias y mezclas seguras.',
+    title: 'Un nuevo concepto en fertilización.',
+    description: '',
     button: 'Hablar con un asesor'
   },
   footer: {
     contact: {
       title: 'Contacto',
-      details: ['berumen.8a@gmail.com', 'soporte@fertikhor.com', 'Tel: +52 33 1402 5519']
+      details: ['berumen.8a@gmail.com', 'efrén_8a@hotmail.com', 'Tel: +52 33 1402 5519']
     },
     columns: [
-      { title: 'Soluciones', links: ['Foliares', 'Fertirriego', 'Correctores'] },
-      { title: 'Recursos', links: ['Casos de éxito', 'Guías de mezcla', 'Programas por cultivo'] },
-      { title: 'Empresa', links: ['Quiénes somos', 'Contacto', 'Distribuidores'] }
+      {
+        title: 'SOMOS TU MEJOR OPCIÓN',
+        links: ['Para distribuidores (agroquímicas) y agricultores.']
+      }
     ]
   }
 }

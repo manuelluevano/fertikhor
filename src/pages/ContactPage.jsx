@@ -13,7 +13,7 @@ const ContactPage = () => {
         <div className="rounded-3xl border border-brand-primary/10 bg-white/90 p-6 shadow-xl shadow-brand-primary/10 backdrop-blur">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <Link to="/" className="flex items-center gap-3">
-              <BrandLogo />
+              <BrandLogo className="h-20" />
               <span className="sr-only">Ferti Khor</span>
             </Link>
             <div className="flex flex-wrap gap-3">
@@ -50,7 +50,7 @@ const ContactPage = () => {
             <div className="rounded-2xl border border-brand-primary/10 bg-brand-accent/50 p-6 shadow-inner">
               <p className="text-xs uppercase tracking-[0.3em] text-brand-primary">Cobertura</p>
               <p className="mt-3 text-sm text-brand-ink/80">
-                Respuesta en menos de 24 h. Enviamos desde Jalisco y damos soporte en campo para foliar y fertirriego.
+                Respuesta en menos de 24 h. Enviamos a toda la República Mexicana y damos soporte en campo para nutrición vegetal y protección vegetal.
               </p>
               <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
                 <div className="rounded-xl bg-white/80 p-4 shadow">

@@ -4,6 +4,8 @@ import BrandLogo from '../components/BrandLogo'
 
 import whatsappIcon from '../assets/whatsapp.svg'
 import facebookIcon from '../assets/facebook.svg'
+import baseInicio from '../assets/base inicio correcto.svg'
+import nube from '../assets/nubef.png'
 
 const FACEBOOK_URL = 'https://www.facebook.com/FERTIKHOR?locale=es_LA'
 const WHATSAPP_URL = 'https://wa.me/523314025519'
@@ -40,14 +42,12 @@ const HeroSection = ({ hero, brand, navLinks }) => {
   const closeMenu = () => setMenuOpen(false)
 
   return (
-    <header className="relative text-brand-ink">
-      <div className="absolute inset-0 bg-hero-crops bg-cover bg-center" aria-hidden="true" />
-      <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-      <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-8 sm:px-8">
-        <nav className="flex flex-col gap-3 rounded-3xl bg-white/85 px-4 py-3 shadow-lg backdrop-blur sm:flex-row sm:items-center sm:justify-between">
+    <header className="relative bg-white text-brand-ink">
+      <div className="relative mx-auto flex max-w-6xl flex-col px-4 py-4 sm:px-8">
+        <nav className="flex flex-col gap-3 rounded-3xl border border-brand-primary/10 bg-white/90 px-4 py-3 shadow-lg backdrop-blur sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center justify-between gap-3">
             <Link to="/" className="flex items-center gap-3" onClick={closeMenu}>
-              <BrandLogo className="h-10" />
+              <BrandLogo className="h-16" />
               <span className="sr-only">{brand}</span>
             </Link>
             <button
@@ -93,25 +93,28 @@ const HeroSection = ({ hero, brand, navLinks }) => {
           </div>
         </nav>
 
-        <div className="mt-auto max-w-3xl space-y-6 pb-16 pt-20 text-white">
-          <span className="text-sm uppercase tracking-[0.4em] text-white/70">Ferti Khor</span>
-          <h1 className="font-display text-4xl leading-tight sm:text-5xl">{hero.title}</h1>
-          <p className="text-lg text-white/85">{hero.subtitle}</p>
-          <div className="flex flex-wrap gap-4">
-            <ActionLink
-              href={hero.primaryAction.href}
-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold uppercase tracking-wide text-brand-primary transition hover:scale-105"
-            >
-              {hero.primaryAction.label}
-            </ActionLink>
-            {hero.secondaryAction?.label && hero.secondaryAction?.href ? (
-              <ActionLink
-                href={hero.secondaryAction.href}
-                className="rounded-full border border-white/60 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-white/10"
-              >
-                {hero.secondaryAction.label}
-              </ActionLink>
-            ) : null}
+        <div className="grid gap-6 py-16 lg:grid-cols-3 lg:items-center">
+          <div className="space-y-3 text-center lg:col-span-2 lg:max-w-3xl lg:text-left lg:pr-6">
+            <span className="text-sm uppercase tracking-[0.4em] text-brand-highlight/80">Ferti Khor</span>
+            <h1 className="font-display text-4xl leading-tight text-brand-primary sm:text-5xl">
+              {hero.title}
+            </h1>
+          </div>
+
+          <div className="mx-auto flex w-full max-w-[320px] items-start justify-center gap-6 lg:justify-end">
+            <img
+              src={baseInicio}
+              alt="FertiKhor producto"
+              className="w-full max-w-[160px] object-contain"
+              loading="lazy"
+            />
+            <div className="relative mt-[-10px] w-[120px] max-w-[130px]">
+              <img src={nube} alt="" className="w-full object-contain" loading="lazy" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center px-5 text-center space-y-1">
+                <div className="text-[12px] font-semibold uppercase text-brand-primary leading-tight">15-20-10</div>
+                <div className="text-[10px] font-semibold text-brand-ink/80 leading-tight">Para desarrollo vegetativo</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

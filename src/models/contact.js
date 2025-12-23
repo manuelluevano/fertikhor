@@ -1,8 +1,7 @@
 // Modelo: Información de contacto oficial para distribuidores y clientes.
 export const contactInfo = {
   headline: 'Estamos listos para apoyar tu programa nutricional',
-  description:
-    'Diseñamos aplicaciones foliares y de fertirriego a la medida. Escríbenos y un asesor te responderá en menos de 24 horas hábiles.',
+  description: '',
   emails: ['berumen.8a@gmail.com', 'efrén_8a@hotmail.com'],
   phones: {
     mobile: '+52 33 1402 5519',

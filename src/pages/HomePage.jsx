@@ -3,7 +3,6 @@ import ValueSection from '../sections/ValueSection'
 import SolutionsSection from '../sections/SolutionsSection'
 import InnovationSection from '../sections/InnovationSection'
 import ProductSection from '../sections/ProductSection'
-import SupportSection from '../sections/SupportSection'
 import CTASection from '../sections/CTASection'
 import FooterSection from '../sections/FooterSection'
 import { getLandingContent } from '../controllers/landingController.js'
@@ -19,7 +18,6 @@ const HomePage = () => {
       <SolutionsSection solutions={content.solutions} />
       <InnovationSection innovation={content.innovation} />
       <ProductSection products={content.products} />
-      <SupportSection support={content.support} />
       <CTASection cta={content.cta} />
       <FooterSection footer={content.footer} brand={content.brand} />
     </main>
