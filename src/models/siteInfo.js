@@ -15,15 +15,19 @@ export const siteInfo = {
   },
   values: [
     {
-      title: '* Fórmulas concentradas',
+      title: 'Agro veterinarias',
       description: ''
     },
     {
-      title: '* Compatibilidad probada',
+      title: 'Tiendas de agroquímicos',
       description: ''
     },
     {
-      title: '* Soporte agronómico',
+      title: 'Provedores de fertilizantes',
+      description: ''
+    },
+    {
+      title: 'Agroferreteras',
       description: ''
     }
   ],
