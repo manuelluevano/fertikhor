@@ -15,38 +15,22 @@ export const siteInfo = {
   },
   values: [
     {
-      title: 'Fórmulas concentradas',
-      description: 'Nutrientes y formulaciones en alta concentración y asimilación.'
+      title: '* Fórmulas concentradas',
+      description: ''
     },
     {
-      title: 'Compatibilidad probada',
-      description: 'Ensayos constantes en fertirriego y aplicaciones foliares para garantizar seguridad en resultados.'
+      title: '* Compatibilidad probada',
+      description: ''
     },
     {
-      title: 'Soporte agronómico',
-      description: 'Acompañamiento de campo para ajustar dosis, horarios y etapas fenológicas clave.'
+      title: '* Soporte agronómico',
+      description: ''
     }
   ],
   solutions: {
     title: 'Soluciones para cada etapa',
     description: 'Programas arranqué, desarrollo, floración, llenado y calidad final.',
-    items: [
-      {
-        name: 'Arranque y desarrollo',
-        details: 'Producimos enraizadores sólidos y líquidos, arrancadores y formulaciones para desarrollo vegetativo.',
-        tags: []
-      },
-      {
-        name: 'Floración y cuaje',
-        details: 'Calcio, boro, molibdeno y fosfitos sistémicos para amarre uniforme y defensa natural.',
-        tags: []
-      },
-      {
-        name: 'Llenado y calidad',
-        details: 'Potasio, silicio y micronutrientes que elevan grados Brix, firmeza y apariencia comercial.',
-        tags: []
-      }
-    ]
+    items: []
   },
   innovation: {
     title: 'FERTILIZANTES FERTI-KHOR',

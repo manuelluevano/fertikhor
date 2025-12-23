@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "cp dist/index.html dist/404.html",
+    "deploy": "npm run build && rm -rf /tmp/fertikhor-gh && git worktree add -B gh-pages /tmp/fertikhor-gh && rm -rf /tmp/fertikhor-gh/* && cp -r dist/* /tmp/fertikhor-gh/ && cd /tmp/fertikhor-gh && git add --all && git commit -m \"Deploy\" || true && git push origin gh-pages && cd - && git worktree remove /tmp/fertikhor-gh",
     "lint": "eslint .",
     "preview": "vite preview"
   },

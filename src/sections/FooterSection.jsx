@@ -5,7 +5,7 @@ import whatsappIcon from '../assets/whatsapp.svg'
 // Vista: FooterSection concentra la información de contacto y los enlaces de ayuda.
 const FooterSection = ({ footer, brand }) => (
   <footer id="contacto" className="border-t border-brand-primary/10 bg-white text-brand-primary">
-    <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-8 lg:grid-cols-2">
+    <div className="mx-auto grid max-w-6xl grid-cols-2 items-center gap-6 px-4 py-12 sm:px-8">
       <div className="space-y-3">
         <BrandLogo className="h-20 drop-shadow" />
         <p className="mt-4 text-sm text-brand-ink/70">{footer.contact.title}</p>
@@ -36,9 +36,9 @@ const FooterSection = ({ footer, brand }) => (
         </div>
       </div>
       {footer.columns.map((column) => (
-        <div key={column.title} className="flex flex-col items-center justify-center text-center gap-3">
+        <div key={column.title} className="flex flex-col justify-center gap-2 text-left sm:items-start sm:text-left">
           <p className="font-display text-2xl text-brand-primary">{column.title}</p>
-          <ul className="space-y-3 text-base text-brand-ink/80">
+          <ul className="space-y-2 text-base text-brand-ink/80">
             {column.links.map((link) => (
               <li key={link} className="font-semibold uppercase tracking-wide text-brand-primary/80">
                 {link}
