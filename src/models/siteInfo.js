@@ -29,7 +29,7 @@ export const siteInfo = {
   ],
   solutions: {
     title: 'Soluciones para cada etapa',
-    description: 'Programas arranqué, desarrollo, floración, llenado y calidad final.',
+    description: 'Enraizado, arranqué, desarrollo, floración, llenado y calidad final.',
     items: []
   },
   innovation: {
