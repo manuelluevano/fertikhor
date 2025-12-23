@@ -93,26 +93,35 @@ const HeroSection = ({ hero, brand, navLinks }) => {
           </div>
         </nav>
 
-        <div className="grid gap-6 py-16 lg:grid-cols-3 lg:items-center">
-          <div className="space-y-3 text-center lg:col-span-2 lg:max-w-3xl lg:text-left lg:pr-6">
+        <div className="grid gap-10 py-16 lg:grid-cols-3 lg:items-center">
+          <div className="space-y-4 text-center lg:col-span-2 lg:max-w-3xl lg:text-left lg:pr-6">
             <span className="text-sm uppercase tracking-[0.4em] text-brand-highlight/80">Ferti Khor</span>
             <h1 className="font-display text-4xl leading-tight text-brand-primary sm:text-5xl">
               {hero.title}
             </h1>
           </div>
 
-          <div className="mx-auto flex w-full max-w-[320px] items-start justify-center gap-6 lg:justify-end">
+          <div className="mx-auto flex w-full max-w-[360px] items-center justify-center gap-2 lg:justify-end">
             <img
               src={baseInicio}
               alt="FertiKhor producto"
               className="w-full max-w-[160px] object-contain"
               loading="lazy"
             />
-            <div className="relative mt-[-10px] w-[120px] max-w-[130px]">
-              <img src={nube} alt="" className="w-full object-contain" loading="lazy" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center px-5 text-center space-y-1">
-                <div className="text-[12px] font-semibold uppercase text-brand-primary leading-tight">15-20-10</div>
-                <div className="text-[10px] font-semibold text-brand-ink/80 leading-tight">Para desarrollo vegetativo</div>
+            <div className="flex h-[130px] w-28 flex-col justify-start gap-3 -mt-14 sm:-mt-10 lg:-mt-14">
+              <span className="block h-0.5 w-full rounded-full bg-brand-primary/40" />
+              <span className="block h-0.5 w-full rounded-full bg-brand-primary/40" />
+            </div>
+            <div className="flex flex-col items-center gap-4">
+              <div className="relative mt-[-10px] w-[120px] max-w-[130px]">
+                <img src={nube} alt="" className="w-full object-contain" loading="lazy" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center px-5 text-center space-y-1">
+                  <div className="text-[12px] font-semibold uppercase text-brand-primary leading-tight">15-20-10</div>
+                  <div className="text-[10px] font-semibold text-brand-ink/80 leading-tight">Para desarrollo vegetativo</div>
+                </div>
+              </div>
+              <div className="mt-20 text-center text-[12px] font-semibold uppercase tracking-[0.12em] text-brand-primary/90">
+                El favorito de los agricultores mexicanos
               </div>
             </div>
           </div>
