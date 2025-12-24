@@ -23,7 +23,7 @@ export const siteInfo = {
       description: ''
     },
     {
-      title: 'Provedores de fertilizantes',
+      title: 'Proveedores de fertilizantes',
       description: ''
     },
     {
