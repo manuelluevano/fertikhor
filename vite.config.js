@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // For GitHub Pages with custom domain, serve from root
-  base: '/',
+  base: '/fertikhor',
 })
