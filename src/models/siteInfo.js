@@ -31,6 +31,7 @@ export const siteInfo = {
       description: ''
     }
   ],
+  benefit: 'El mejor costo/beneficio del mercado',
   solutions: {
     title: 'Soluciones para cada etapa',
     description: 'Enraizado, arranqué, desarrollo, floración, llenado y calidad final.',

@@ -1,11 +1,11 @@
 // Vista: ValueSection destaca los pilares estratégicos de la marca.
 const ValueSection = ({ values }) => (
-  <section className="relative mx-auto max-w-6xl px-4 py-16 sm:px-8">
+  <section className="relative mx-auto max-w-6xl px-4 pt-14 pb-0 sm:px-8 sm:pt-14 sm:pb-0">
     <div
       className="absolute inset-x-0 top-6 h-40 rounded-full bg-gradient-to-r from-brand-primary/15 via-brand-primary/10 to-transparent blur-3xl"
       aria-hidden="true"
     />
-    <article className="relative overflow-hidden rounded-3xl border border-brand-primary/15 bg-white/90 p-8 shadow-xl shadow-brand-primary/15 backdrop-blur sm:p-10">
+    <article className="relative overflow-hidden rounded-3xl border border-brand-primary/15 bg-white/90 p-8 shadow-xl shadow-brand-primary/15 backdrop-blur min-h-[320px] sm:min-h-[360px] sm:p-10">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <h2 className="whitespace-nowrap text-6xl font-extrabold leading-tight text-brand-ink sm:text-7xl lg:text-8xl">
           Gana más

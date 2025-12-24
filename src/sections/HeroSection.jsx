@@ -46,8 +46,13 @@ const HeroSection = ({ hero, brand, navLinks }) => {
       <div className="relative mx-auto flex max-w-6xl flex-col px-4 py-4 sm:px-8">
         <nav className="flex flex-col gap-3 rounded-3xl border border-brand-primary/10 bg-white/90 px-4 py-3 shadow-lg backdrop-blur sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center justify-between gap-3">
-            <Link to="/" className="flex items-center gap-3" onClick={closeMenu}>
-              <BrandLogo className="h-28 sm:h-24" />
+            <Link to="/" className="flex items-start gap-3" onClick={closeMenu}>
+              <div className="flex flex-col items-center">
+                <BrandLogo className="h-24 sm:h-20" />
+                <span className="mt-0.5 text-center text-xs font-semibold uppercase tracking-[0.1em] text-brand-ink/70 sm:text-sm">
+                  Un nuevo concepto en fertilización
+                </span>
+              </div>
               <span className="sr-only">{brand}</span>
             </Link>
             <button

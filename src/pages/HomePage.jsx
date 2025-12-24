@@ -1,5 +1,6 @@
 import HeroSection from '../sections/HeroSection'
 import ValueSection from '../sections/ValueSection'
+import BenefitSection from '../sections/BenefitSection'
 import SolutionsSection from '../sections/SolutionsSection'
 import InnovationSection from '../sections/InnovationSection'
 import ProductSection from '../sections/ProductSection'
@@ -15,6 +16,7 @@ const HomePage = () => {
     <main className="bg-transparent text-brand-ink">
       <HeroSection hero={content.hero} brand={content.brand} navLinks={content.navLinks} />
       <ValueSection values={content.values} />
+      <BenefitSection text={content.benefit} />
       <SolutionsSection solutions={content.solutions} />
       <InnovationSection innovation={content.innovation} />
       <ProductSection products={content.products} />
