@@ -6,6 +6,7 @@ import whatsappIcon from '../assets/whatsapp.svg'
 import facebookIcon from '../assets/facebook.svg'
 import baseInicio from '../assets/fertikhor_transparente.svg'
 import nube from '../assets/nubef.png'
+import logoAlt from '../assets/logo 2.jpeg'
 
 const FACEBOOK_URL = 'https://www.facebook.com/FERTIKHOR'
 const WHATSAPP_URL = 'https://wa.me/523314025519'
@@ -45,11 +46,19 @@ const HeroSection = ({ hero, brand, navLinks }) => {
     <header className="relative bg-white text-brand-ink">
       <div className="relative mx-auto flex max-w-6xl flex-col px-4 py-4 sm:px-8">
         <nav className="flex flex-col gap-3 rounded-3xl border border-brand-primary/10 bg-white/90 px-4 py-3 shadow-lg backdrop-blur sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center justify-between gap-3">
-            <Link to="/" className="flex items-start gap-3" onClick={closeMenu}>
+          <div className="flex w-full items-center justify-between  sm:w-auto">
+            <Link to="/" className="flex items-start" onClick={closeMenu}>
               <div className="flex flex-col items-center">
-                <BrandLogo className="h-24 sm:h-20" />
-                <span className="mt-0.5 text-center text-xs font-semibold uppercase tracking-[0.1em] text-brand-ink/70 sm:text-sm">
+                <div className="flex ">
+                  <BrandLogo className="block h-24 sm:h-20 mr-8" />
+                  <img
+                    src={logoAlt}
+                    alt="Logo alterno FertiKhor"
+                    className=" pb-4 block h-24 w-auto object-contain sm:mt-1 sm:h-20 ml-8"
+                    loading="lazy"
+                  />
+                </div>
+                <span className="mt-0.5 whitespace-nowrap text-left text-xs font-semibold uppercase tracking-[0.1em] text-brand-ink/70 sm:text-sm">
                   Un nuevo concepto en fertilización
                 </span>
               </div>
@@ -106,7 +115,7 @@ const HeroSection = ({ hero, brand, navLinks }) => {
             </h1>
           </div>
 
-          <div className="mx-auto flex w-full max-w-[360px] items-center justify-center gap-2 lg:justify-end">
+          <div className="mx-auto -mt-8 flex w-full max-w-[360px] items-center justify-center gap-2 lg:justify-end">
             <img
               src={baseInicio}
               alt="FertiKhor producto"
