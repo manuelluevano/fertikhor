@@ -4,10 +4,10 @@ import BrandLogo from '../components/BrandLogo'
 
 import whatsappIcon from '../assets/whatsapp.svg'
 import facebookIcon from '../assets/facebook.svg'
-import baseInicio from '../assets/base inicio correcto.svg'
+import baseInicio from '../assets/fertikhor_transparente.svg'
 import nube from '../assets/nubef.png'
 
-const FACEBOOK_URL = 'https://www.facebook.com/FERTIKHOR?locale=es_LA'
+const FACEBOOK_URL = 'https://www.facebook.com/FERTIKHOR'
 const WHATSAPP_URL = 'https://wa.me/523314025519'
 
 const navClass =
@@ -110,7 +110,7 @@ const HeroSection = ({ hero, brand, navLinks }) => {
             <img
               src={baseInicio}
               alt="FertiKhor producto"
-              className="w-full max-w-[160px] object-contain"
+              className="w-full max-w-[160px] scale-150 origin-left object-contain"
               loading="lazy"
             />
             <div className="flex h-[130px] w-28 flex-col justify-start gap-3 -mt-14 sm:-mt-10 lg:-mt-14">
